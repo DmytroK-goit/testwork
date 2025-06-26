@@ -1,0 +1,132 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fce8d5; /* пастельно-персиковий */
+  color: #5c5c5c;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.start {
+  background-color: #c4f0c5; /* м’ятно-зелений */
+  color: #3c3c3c;
+}
+
+.pause {
+  background-color: #ffe9ae; /* пастельно-жовтий */
+  color: #3c3c3c;
+}
+
+.reset {
+  background-color: #f9c8c8; /* рожево-персиковий */
+  color: #3c3c3c;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 1000px;
+  height: 1000px;
+  /* background-color: #fff8f0;  */
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: #fa8072;
+  font-weight: bold;
+  background-color: #fff0e5;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: relative;
+  border: 20px solid transparent;
+  background-origin: border-box;
+  background-clip: border-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 4;
+}
+
+.timer::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  background-color: #fff0e5;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeText {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  color: #a1743b;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", sans-serif;
+  text-shadow: 1px 1px 0 #fffaf2;
+}
+.progressCircle {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background-color: #fce8d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 0.3s linear;
+}
+
+.timer {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background-color: #fff0e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: #fa8072;
+  font-weight: bold;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.timeText {
+  position: relative;
+  z-index: 3;
+}

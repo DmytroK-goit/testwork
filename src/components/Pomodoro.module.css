@@ -3,17 +3,17 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   border: none;
   border-radius: 20px;
-  background-color: #fce8d5; /* пастельно-персиковий */
+  background-color: #fce8d5;
   color: #5c5c5c;
   font-size: 1em;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  width: 200px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   transition: all 0.3s ease;
 }
 
@@ -22,18 +22,22 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+.btn:active {
+  border: none;
+}
+
 .start {
-  background-color: #c4f0c5; /* м’ятно-зелений */
+  background-color: #c4f0c5;
   color: #3c3c3c;
 }
 
 .pause {
-  background-color: #ffe9ae; /* пастельно-жовтий */
+  background-color: #ffe9ae;
   color: #3c3c3c;
 }
 
 .reset {
-  background-color: #f9c8c8; /* рожево-персиковий */
+  background-color: #f39292;
   color: #3c3c3c;
 }
 
@@ -43,38 +47,31 @@
   align-items: center;
   justify-content: center;
   border: none;
-  width: 1000px;
-  height: 1000px;
-  /* background-color: #fff8f0;  */
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  padding: 40px;
+  width: 400px;
+  height: 400px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   margin-top: 30px;
 }
 
 .timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff0e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
+  font-size: 42px;
   color: #fa8072;
   font-weight: bold;
-  background-color: #fff0e5;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  position: relative;
-  border: 20px solid transparent;
-  background-origin: border-box;
-  background-clip: border-box;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-  z-index: 4;
+  z-index: 2;
 }
 
 .timer::before {
@@ -93,37 +90,21 @@
 
 h1 {
   color: #a1743b;
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 10px;
   font-family: "Segoe UI", sans-serif;
   text-shadow: 1px 1px 0 #fffaf2;
 }
 .progressCircle {
   position: relative;
-  width: 520px;
-  height: 520px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   background-color: #fce8d5;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-image 0.3s linear;
-}
-
-.timer {
-  position: relative;
-  width: 440px;
-  height: 440px;
-  border-radius: 50%;
-  background-color: #fff0e5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  color: #fa8072;
-  font-weight: bold;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-  z-index: 2;
 }
 
 .timeText {

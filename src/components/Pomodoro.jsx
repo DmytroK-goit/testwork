@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { VscDebugStart } from "react-icons/vsc";
 import { FaPause } from "react-icons/fa";
 import { GrPowerReset } from "react-icons/gr";
-import s from "./Tomato.module.css";
+import s from "./Pomodoro.module.css";
 
 const TOTAL_TIME = 25 * 60;
 // const TOTAL_TIME = 1 * 60;
 
-export const Tomato = () => {
+export const Pomodoro = () => {
   const timerRef = useRef(null);
   const intervalRef = useRef(null);
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
@@ -25,7 +25,7 @@ export const Tomato = () => {
     const timer = timerRef.current;
     if (timer) {
       timer.style.backgroundImage = `conic-gradient(
-            rgb(240, 229, 84) 0%,
+            rgb(245, 104, 69) 0%,
             rgb(130, 240, 67) ${progress}%,
             transparent ${progress}% 100%
           )`;
